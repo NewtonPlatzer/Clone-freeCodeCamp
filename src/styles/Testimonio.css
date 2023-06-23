@@ -1,0 +1,29 @@
+
+.testimonio {
+    display: flex;
+    align-items: center;
+    background-color:  #0a0a23;
+    height: 320px;
+    width: 1200px;
+    margin-bottom: 2.5rem;
+}
+.div-imagen-testimonio img {
+    height: 320px;
+    object-fit: cover;
+}
+
+.div-texto-testimonio {
+    padding: 2em;
+    text-align: center;
+}
+.div-texto-testimonio h3 {
+    margin-top: -0.4em;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: lightgray;
+}
+.div-texto-testimonio p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    text-align: justify;
+}

@@ -1,0 +1,30 @@
+.btn-curso {
+    display: flex;
+    background-color: #3b3b4f;
+    border: 3px solid white;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 55%;
+    padding: 10px 20px;
+    
+}
+.btn-curso:hover {
+    background-color: #676783;
+    cursor: pointer;
+}
+.main-content-btn {
+    display: flex;
+    gap: 12px;
+}
+.main-content-btn p {
+    font-size: 1.2rem;
+}
+.icono-curso {
+    width: 60px;
+    object-fit: cover;
+}
+.flecha {
+    width: 30px;
+    height: 30px;
+}

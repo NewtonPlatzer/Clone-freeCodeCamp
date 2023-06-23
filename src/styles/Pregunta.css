@@ -1,0 +1,10 @@
+.div-pregunta {
+    max-width: 75%;
+}
+
+.div-pregunta h3 {
+    font-size: 1.5rem;
+}
+.div-pregunta p {
+    font-size: 1.1rem;
+}
