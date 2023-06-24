@@ -2,12 +2,15 @@ $azul-oscuro1: #0a0a23;
 $azul-oscuro2: #1b1b32;
 $azul-oscuro3: #3b3b4f;
 
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: $azul-oscuro2;
   color: white;
   font-size: 16px;
   overflow-x: hidden;
-  padding-bottom: 4em;
 }
 
 nav {
@@ -70,7 +73,7 @@ nav {
         width: 24px;
         object-fit: cover;
       }
-      
+
       &:last-child {
         background-color: rgb(144, 157, 165);
       }
@@ -85,7 +88,6 @@ nav {
       background-color: #fff;
       color: $azul-oscuro1;
     }
-    
   }
 }
 
@@ -181,7 +183,14 @@ nav {
 footer {
   background-color: #2a2a40;
   margin-bottom: -65px;
-  padding: 50px 30px;
+  padding: 50px 20px;
+  h3 {
+    font-family: monospace, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+  }
   .footer-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -208,6 +217,7 @@ footer {
     .tendencias {
       table {
         border-spacing: 50px 8px;
+
         caption {
           font-family: monospace, sans-serif;
           font-size: 1rem;
@@ -241,11 +251,125 @@ footer {
   }
 }
 
-// @media screen and (max-width: 768px) {
-//     .content-top {
-//         margin-top: 2em;
-//         .top-text {
+@media screen and (max-width: 768px) {
+  .btn-iniciar {
+    font-size: 1.4rem;
+    padding: 14px 30px;
+  }
+  nav {
+    display: none;
+  }
+  .content-top {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 50px;
 
-//         }
-//     }
-// }
+    margin: 0;
+
+    .top-text {
+      width: 90%;
+      .titulo-principal {
+        font-size: 1.5em;
+        margin-bottom: 1.5rem;
+        .parte {
+          display: block;
+          line-height: 2em;
+        }
+      }
+      .resultados {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        .resultados-linea1 {
+          display: block;
+        }
+      }
+      .marcas {
+        width: 350px;
+      }
+      .estudiantes {
+        display: none;
+      }
+
+      .texto-imagen-estudiantes {
+        display: none;
+      }
+    }
+    .div-empresas-recomendaciones {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      .empresas-recomendaciones {
+        height: 120px;
+        object-fit: cover;
+        max-width: 10vw;
+      }
+    }
+  }
+  .div-testimonios {
+    padding-bottom: 0;
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+  }
+  .cursos {
+    padding: 12px 18px;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+  .preguntas {
+    margin-left: 12%;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+  }
+  .despedida {
+    margin: 2em 0;
+    margin-left: 12%;
+  }
+  footer {
+    margin-bottom: 0;
+    padding: 50px 20px;
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      .tendencias {
+        h3 {
+          display: block;
+          margin-bottom: 1rem;
+        }
+        table {
+          border-spacing: 0;
+          caption {
+            display: none;
+          }
+          td {
+            display: block;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        display: block;
+      }
+      a {
+        line-height: 20px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #1b1b32;
   color: white;
   font-size: 16px;
   overflow-x: hidden;
-  padding-bottom: 4em;
 }
 
 nav {
@@ -171,7 +175,14 @@ nav .enlaces-header .btn-text:hover {
 footer {
   background-color: #2a2a40;
   margin-bottom: -65px;
-  padding: 50px 30px;
+  padding: 50px 20px;
+}
+footer h3 {
+  font-family: monospace, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: none;
+  text-align: center;
 }
 footer .footer-top {
   display: grid;
@@ -226,6 +237,123 @@ footer .footer-top .tendencias table td:hover {
 }
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-iniciar {
+    font-size: 1.4rem;
+    padding: 14px 30px;
+  }
+  nav {
+    display: none;
+  }
+  .content-top {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+  }
+  .content-top .top-text {
+    width: 90%;
+  }
+  .content-top .top-text .titulo-principal {
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+  }
+  .content-top .top-text .titulo-principal .parte {
+    display: block;
+    line-height: 2em;
+  }
+  .content-top .top-text .resultados {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .content-top .top-text .resultados .resultados-linea1 {
+    display: block;
+  }
+  .content-top .top-text .marcas {
+    width: 350px;
+  }
+  .content-top .top-text .estudiantes {
+    display: none;
+  }
+  .content-top .top-text .texto-imagen-estudiantes {
+    display: none;
+  }
+  .content-top .div-empresas-recomendaciones {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .content-top .div-empresas-recomendaciones .empresas-recomendaciones {
+    height: 120px;
+    object-fit: cover;
+    max-width: 10vw;
+  }
+  .div-testimonios {
+    padding-bottom: 0;
+  }
+  .div-testimonios h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .cursos {
+    padding: 12px 18px;
+  }
+  .cursos h2 {
+    margin-bottom: 2rem;
+  }
+  .preguntas {
+    margin-left: 12%;
+  }
+  .preguntas h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .despedida {
+    margin: 2em 0;
+    margin-left: 12%;
+  }
+  footer {
+    margin-bottom: 0;
+    padding: 50px 20px;
+  }
+  footer .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-top .tendencias h3 {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  footer .footer-top .tendencias table {
+    border-spacing: 0;
+  }
+  footer .footer-top .tendencias table caption {
+    display: none;
+  }
+  footer .footer-top .tendencias table td {
+    display: block;
+    margin-bottom: 12px;
+  }
+  footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer-links h3 {
+    display: block;
+  }
+  footer .footer-links a {
+    line-height: 20px;
+  }
+  footer .footer-links a:hover {
+    text-decoration: underline;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

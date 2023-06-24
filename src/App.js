@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import React from "react";
 import "./styles/App.css";
 import Testimonio from "./components/Testimonio";
 import Curso from "./components/Curso";
@@ -167,6 +168,7 @@ function App() {
             </p>
           </div>
           <div className="tendencias">
+            <h3>Guías de tendencias</h3>
             <table>
               <caption>Guías de tendencias</caption>
               <tbody>
@@ -225,6 +227,7 @@ function App() {
           </div>
         </div>
         <div className="footer-links">
+          <h3>Nuestra caridad</h3>
           <a
             href="https://www.freecodecamp.org/espanol/news/acerca-de-freecodecamp-preguntas-frecuentes/"
             target="_blank"

@@ -28,3 +28,16 @@
     width: 30px;
     height: 30px;
 }
+@media screen and (max-width: 768px) {
+    .btn-curso {
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 12px;
+        width: auto;
+        padding: 10px 20px;
+    }
+    .icono-curso {
+        width: 40px;
+        object-fit: contain;
+    }
+}
