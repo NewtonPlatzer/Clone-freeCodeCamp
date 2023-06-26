@@ -8,14 +8,15 @@ body {
   color: white;
   font-size: 16px;
   overflow-x: hidden;
+  width: 100%;
 }
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 12px;
   display: flex;
   justify-content: space-between;
@@ -23,35 +24,37 @@ nav {
   box-sizing: border-box;
 }
 nav .div-search button {
-  height: 24px;
   background-color: #3b3b4f;
   border: none;
   position: absolute;
-  padding-top: 4px;
+  margin-top: 2px;
+  padding-top: 7px;
   cursor: pointer;
 }
 nav .div-search button .lupa-icon {
   width: 18px;
+  padding-left: 5px;
 }
 nav .div-search input {
   border: none;
   background-color: #3b3b4f;
-  height: 24px;
-  width: 460px;
+  height: 26px;
+  width: 35vw;
+  margin-top: 2px;
   padding-left: 35px;
   font-size: 1.05rem;
-  color: rgb(223, 223, 223);
+  color: rgb(207, 205, 205);
 }
 nav .div-search input::placeholder {
-  color: rgb(223, 223, 223);
+  color: rgb(207, 205, 205);
   font-size: 1.05rem;
 }
 nav .div-logo img {
-  width: 220px;
-  margin-left: -200px;
+  width: 210px;
+  margin-left: -15vw;
 }
 nav .enlaces-header {
-  margin-right: 30px;
+  margin-right: 20px;
   display: flex;
   gap: 12px;
 }
@@ -60,7 +63,7 @@ nav .enlaces-header .btn-nav {
   border: 1px solid white;
   box-sizing: border-box;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-right: 12px;
   padding-left: 12px;
   cursor: pointer;
@@ -70,13 +73,18 @@ nav .enlaces-header .btn-nav img {
   object-fit: cover;
 }
 nav .enlaces-header .btn-nav:last-child {
-  background-color: rgb(144, 157, 165);
+  background-color: lightgray;
 }
 nav .enlaces-header .btn-icon {
-  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  padding: 1px 8px;
 }
 nav .enlaces-header .btn-icon:hover {
   opacity: 40%;
+}
+nav .enlaces-header .image-menu-nav {
+  display: none;
 }
 nav .enlaces-header .btn-text:hover {
   background-color: #fff;
@@ -239,13 +247,42 @@ footer .footer-top .tendencias table td:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 980px) {
+  .div-search {
+    display: none;
+  }
+  .div-logo img {
+    margin-left: 0 !important;
+  }
+}
 @media screen and (max-width: 768px) {
+  nav {
+    padding-left: 8px;
+  }
+  nav .div-search {
+    display: none;
+  }
+  nav .div-logo img {
+    width: 200px;
+    margin-right: 12px;
+  }
+  nav .enlaces-header {
+    margin-right: 20px;
+    display: flex;
+    gap: 12px;
+  }
+  nav .enlaces-header .btn-hide {
+    display: none;
+  }
+  nav .enlaces-header .btn-nav:last-child {
+    background-color: lightgray;
+  }
+  nav .enlaces-header .image-menu-nav {
+    display: block;
+  }
   .btn-iniciar {
     font-size: 1.4rem;
     padding: 14px 30px;
-  }
-  nav {
-    display: none;
   }
   .content-top {
     align-items: center;
@@ -275,7 +312,8 @@ footer .footer-top .tendencias table td:hover {
     display: block;
   }
   .content-top .top-text .marcas {
-    width: 350px;
+    width: 100%;
+    margin: 0 auto;
   }
   .content-top .top-text .estudiantes {
     display: none;
