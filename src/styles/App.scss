@@ -11,53 +11,58 @@ body {
   color: white;
   font-size: 16px;
   overflow-x: hidden;
+  width: 100%;
 }
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 12px;
   display: flex;
   justify-content: space-between;
   background-color: $azul-oscuro1;
   box-sizing: border-box;
+
   .div-search {
     button {
-      height: 24px;
       background-color: $azul-oscuro3;
       border: none;
       position: absolute;
-      padding-top: 4px;
+      margin-top: 2px;
+      padding-top: 7px;
       cursor: pointer;
       .lupa-icon {
         width: 18px;
+        padding-left: 5px;
       }
     }
     input {
       border: none;
       background-color: $azul-oscuro3;
-      height: 24px;
-      width: 460px;
+      height: 26px;
+      width: 35vw;
+      margin-top: 2px;
       padding-left: 35px;
       font-size: 1.05rem;
-      color: rgb(223, 223, 223);
+      color: rgb(207, 205, 205);
       &::placeholder {
-        color: rgb(223, 223, 223);
+        color: rgb(207, 205, 205);
         font-size: 1.05rem;
       }
     }
   }
+
   .div-logo {
     img {
-      width: 220px;
-      margin-left: -200px;
+      width: 210px;
+      margin-left: -15vw;
     }
   }
   .enlaces-header {
-    margin-right: 30px;
+    margin-right: 20px;
     display: flex;
     gap: 12px;
     .btn-nav {
@@ -65,7 +70,7 @@ nav {
       border: 1px solid white;
       box-sizing: border-box;
       color: white;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding-right: 12px;
       padding-left: 12px;
       cursor: pointer;
@@ -75,14 +80,19 @@ nav {
       }
 
       &:last-child {
-        background-color: rgb(144, 157, 165);
+        background-color: lightgray;
       }
     }
     .btn-icon {
-      padding: 0 6px;
+      display: flex;
+      align-items: center;
+      padding: 1px 8px;
       &:hover {
         opacity: 40%;
       }
+    }
+    .image-menu-nav {
+      display: none;
     }
     .btn-text:hover {
       background-color: #fff;
@@ -90,7 +100,6 @@ nav {
     }
   }
 }
-
 .content-top {
   display: flex;
   align-items: center;
@@ -251,14 +260,53 @@ footer {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .div-search {
+    display: none;
+  }
+  .div-logo {
+    img {
+      margin-left: 0 !important;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
+  nav {
+    padding-left: 8px;
+    .div-search {
+      display: none;
+    }
+    .div-logo {
+      img {
+        width: 200px;
+        margin-right: 12px;
+      }
+    }
+    .enlaces-header {
+      margin-right: 20px;
+      display: flex;
+      gap: 12px;
+      .btn-hide {
+        display: none;
+      }
+      .btn-nav {
+        &:last-child {
+          background-color:lightgray;
+        }
+      }
+      
+      .image-menu-nav {
+        display: block;
+      } 
+    }
+  }
+
   .btn-iniciar {
     font-size: 1.4rem;
     padding: 14px 30px;
   }
-  nav {
-    display: none;
-  }
+
   .content-top {
     align-items: center;
     justify-content: center;
@@ -287,7 +335,8 @@ footer {
         }
       }
       .marcas {
-        width: 350px;
+        width: 100%;
+        margin: 0 auto;
       }
       .estudiantes {
         display: none;
