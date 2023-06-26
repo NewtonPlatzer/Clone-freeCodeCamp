@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+
   padding: 0;
 }
 
@@ -157,6 +157,7 @@ nav .enlaces-header .btn-text:hover {
   justify-content: center;
 }
 .div-testimonios h2 {
+  margin-bottom: 20px;
   font-size: 2.6em;
 }
 
