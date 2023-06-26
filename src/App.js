@@ -11,21 +11,30 @@ function App() {
       <nav>
         <div className="div-search">
           <button>
-            <img className="lupa-icon" src={require("./images/lupaN.png")} />
+            <a href="">
+              <img
+                className="lupa-icon"
+                src={require("./images/lupaN.png")}
+                href
+              />
+            </a>
           </button>
-          <input placeholder="Encuentra +9,000 Tutoriales" />
+          <input
+            id="inputPreguntas"
+            placeholder="Encuentra +9,000 Tutoriales"
+          />
         </div>
         <div className="div-logo">
           <img src={require("./images/freecodecamp-logo.png")} />
         </div>
         <div className="enlaces-header">
-          <button className="btn-nav btn-text">Donar</button>
+          <button className="btn-nav btn-text btn-hide">Donar</button>
           <button className="btn-nav btn-icon">
             <img src={require("./images/world.png")} />
           </button>
-          <button className="btn-nav btn-text">Menú</button>
+          <button className="btn-nav btn-icon btn-text"><span className="btn-hide">Menú</span><img className="image-menu-nav" src={require("./images/menu-icono.png")}/></button>
           <button className="btn-nav btn-icon">
-            <img src={require("./images/user.png")} />
+            <img src={require("./images/usuario.png")} />
           </button>
         </div>
       </nav>
