@@ -8,5 +8,6 @@ Esta hecho con:
 - Sass
 
 Este es un proyecto de practica y esta abierto a mejoras
+En este momento se esta trabajando el responsive para tablet.
 
 *Ike Gomber*
