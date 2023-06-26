@@ -32,7 +32,7 @@ function App() {
           <button className="btn-nav btn-icon">
             <img src={require("./images/world.png")} />
           </button>
-          <button className="btn-nav btn-icon btn-text"><span className="btn-hide">Menú</span><img className="image-menu-nav" src={require("./images/menu-icono.png")}/></button>
+          <button className="btn-nav btn-text"><span className="btn-hide">Menú</span><img className="image-menu-nav" src={require("./images/menu-icono.png")}/></button>
           <button className="btn-nav btn-icon">
             <img src={require("./images/usuario.png")} />
           </button>
@@ -238,7 +238,7 @@ function App() {
         <div className="footer-links">
           <h3>Nuestra caridad</h3>
           <a
-            href="https://www.freecodecamp.org/espanol/news/acerca-de-freecodecamp-preguntas-frecuentes/"
+            href="about.html"
             target="_blank"
             rel="noreferrer"
           >
